@@ -1,4 +1,8 @@
 .widget-body {
-    color:white;
     font-family: 'Roboto', sans-serif;
+    width: 25vw;
+}
+
+.ng-resizable-diagonal{
+    width: unset;
 }
