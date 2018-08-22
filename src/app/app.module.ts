@@ -3,14 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { WidgetTemplateComponent } from './widget-template/widget-template.component';
+
+// https://www.npmjs.com/package/angular2-draggable
+import { AngularDraggableModule } from 'angular2-draggable';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WidgetTemplateComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularDraggableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
