@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./widget-template.component.css']
 })
 export class WidgetTemplateComponent implements OnInit {
+  public now: Date = new Date();
 
-  constructor() { }
+  constructor() {
+    setInterval(() => {
+      this.now = new Date();
+    }, 1);
+  }
 
   ngOnInit() {
   }
